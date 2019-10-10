@@ -5,8 +5,6 @@ import android.app.Application
 import android.content.Context
 
 /**
- *
- *
  * @author heJianfeng
  * @date 2019-09-27
  */

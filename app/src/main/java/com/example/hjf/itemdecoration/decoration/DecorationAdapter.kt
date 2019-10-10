@@ -1,10 +1,11 @@
-package com.example.hjf.itemdecoration
+package com.example.hjf.itemdecoration.decoration
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.hjf.itemdecoration.R
 
 /**
  * @author heJianfeng
@@ -15,8 +16,7 @@ class DecorationAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.Vi
     var data: Array<String> = context.resources.getStringArray(R.array.animals)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.decoration_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.decoration_item, parent, false)
         return object : RecyclerView.ViewHolder(view) {}
     }
 

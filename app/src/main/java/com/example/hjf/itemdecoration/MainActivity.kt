@@ -3,6 +3,9 @@ package com.example.hjf.itemdecoration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.hjf.itemdecoration.decoration.DecorationAdapter
+import com.example.hjf.itemdecoration.decoration.DecorationCallback
+import com.example.hjf.itemdecoration.decoration.PinnedSectionDecoration
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), DecorationCallback {
@@ -17,7 +20,10 @@ class MainActivity : AppCompatActivity(), DecorationCallback {
         recycle_view.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         recycle_view.adapter = adapter
 
-        recycle_view.addItemDecoration(SimpleDividerDecoration(this))
+        //recycle_view.addItemDecoration(SimpleDividerDecoration(this))
+        //recycle_view.addItemDecoration(LeftAndRightTagDecoration())
+        //recycle_view.addItemDecoration(SectionDecoration(this, this))
+        recycle_view.addItemDecoration(PinnedSectionDecoration(this))
 
     }
 

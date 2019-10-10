@@ -1,7 +1,6 @@
-package com.example.hjf.itemdecoration
+package com.example.hjf.itemdecoration.decoration
 
 /**
- *
  *
  * @author heJianfeng
  * @date 2019-09-27
